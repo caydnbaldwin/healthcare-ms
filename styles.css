@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #c81717;
+    color: #333;
+}
+
+header {
+    background-color: #c81717;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f8dcdc;
+}
+
+.hero {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    background-image: url(assets/healthcare.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #f4f4f4;
+}
+
+.hero h2 {
+    color: white;
+}
+
+.hero p {
+    color: white;
+}
+
+.hero-bar {
+    background-color: #0000007b;
+    padding: 50px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.services h2 {
+    color: white;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.service-item {
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.registration {
+    background-color: #f4f4f4;
+    padding: 5px;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.registration-form input,
+.registration-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.registration-form button {
+    background-color: #c81717;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #c81717a1;
+    color: white;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #c81717;
+    color: white;
+}
+
+/* Delete from here down if all else fails */
+
+/* Scheduling Section */
+.scheduling {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.day-selector {
+    display: flex;
+    justify-content: space-between; /* Spreads circles evenly within the container */
+    align-items: center;
+    gap: 20px 0;
+    width: 50%; /* Ensures full use of the container width */
+    margin: 0 auto;
+}
+
+.day-circle {
+    width: 100px;
+    height: 100px;
+    background-color: #c81717;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.day-circle:hover {
+    background-color: #f8dcdc;
+}
+
+.time-selector {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-slot {
+    width: 100px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: white;
+    border: 1px solid #c81717;
+    cursor: pointer;
+}
+
+.time-slot:hover {
+    background-color: #f8dcdc;
+}
+
+.schedule-submit {
+    margin-top: 20px;
+    background-color: #c81717;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.schedule-submit:hover {
+    background-color: #c81717a1;
+}
+
+
+
+/* Delete from here up if all else fails */

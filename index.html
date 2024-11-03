@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Red Valley Hospital</h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#registration">Patient Registration</a></li>
+                    <li><a href="#registration">Schedule Appointment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bar">
+                <h2>Your Health, Our Priority</h2>
+                <p>Providing quality healthcare with compassion and excellence.</p>
+            </div>
+            
+        </section>
+
+        <section id="services" class="services">
+            <h2>Our Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency services for urgent medical needs.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-user-md"></i>
+                    <h3>Specialized Treatments</h3>
+                    <p>Expert care in cardiology, oncology, and more.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-procedures"></i>
+                    <h3>Inpatient Care</h3>
+                    <p>Comfortable and well-equipped facilities for recovery.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration" class="registration">
+            <h2>Patient Registration</h2>
+            <form class="registration-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="symptoms">Symptoms:</label>
+                <textarea id="symptoms" name="symptoms" rows="4" required></textarea>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Delete from here down if all else fails -->
+
+        <section id="scheduling" class="scheduling">
+            <h2>Schedule Appointment</h2>
+            <div class="day-selector">
+                <!-- Circles for each weekday -->
+                <div class="day-circle" onclick="showTimes('Monday')">Monday</div>
+                <div class="day-circle" onclick="showTimes('Tuesday')">Tuesday</div>
+                <div class="day-circle" onclick="showTimes('Wednesday')">Wednesday</div>
+                <div class="day-circle" onclick="showTimes('Thursday')">Thursday</div>
+                <div class="day-circle" onclick="showTimes('Friday')">Friday</div>
+            </div>
+        
+            <!-- Times will appear here -->
+            <div id="time-selector" class="time-selector"></div>
+            
+            <!-- Submit Button -->
+            <button id="submitBtn" class="schedule-submit" onclick="submitAppointment()" style="display:none;">Submit</button>
+        
+            <!-- Confirmation Message -->
+            <p id="confirmationMessage" style="display:none;">Thank you for your response!</p>
+        </section>
+        
+
+        <!-- Delete from here up if all else fails-->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Red Valley Hospital. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
